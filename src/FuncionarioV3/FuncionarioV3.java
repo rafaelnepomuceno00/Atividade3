@@ -3,35 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FuncionarioV2;
+package FuncionarioV3;
 
 /**
  *
- * @author ifnmg
+ * @author rafae
  */
-public class FuncionarioV2 {
+public class FuncionarioV3 {
     String Nome;
     String Departamento;
     double Salario;
-    String entrada;
+    Data DataEntrada;
     String RG;
     boolean Ativo;    
     
-    void bonfifica(double aumento){
+    void Bonfifica(double aumento){
      this.Salario += Salario*(aumento/100);
          
     } 
-    void demite(){
+    void Demitir(){
     Ativo= false;
     }
-    void mostrar(){
+    void Mostrar(){
     System.out.println("nome do funcionario: " + Nome); 
     System.out.println("departmento do funcionario: " + Departamento);
     System.out.println("salario do funcionario: " + Salario);
-    System.out.println("entrada do funcionario: " + entrada);
+    System.out.println("entrada do funcionario: " + DataEntrada.dia + "/" + DataEntrada.mes +"/" + DataEntrada.ano);
     System.out.println("rg do funcionario: " + RG);
     System.out.println("situação do funcionario: " + Ativo);
     
+    DataEntrada.MostraData();
+    
     }
     }
-  
+

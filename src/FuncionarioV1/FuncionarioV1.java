@@ -19,7 +19,7 @@ public class FuncionarioV1 {
     boolean Ativo;    
     
     void bonfifica(double aumento){
-     this.Salario = Salario*(aumento/100);
+     this.Salario += Salario*(aumento/100);
          
     } 
     void demite(){
