@@ -6,10 +6,13 @@
 package Temperatura;
 
 public class Temperatura {
+    
+    
 
     double converterParacelsius(double Fnt){
-     double C;
-     C = (Fnt-32) / 1.8;
+    double C;
+    C = (Fnt-32) / 1.8;
+    System.out.println("Teperatura em Celsius: " +C);
     return C; 
     }
     
@@ -17,7 +20,7 @@ public class Temperatura {
      double Fnt;
      
      Fnt= (1.8*Celsius)+32;
-    
+    System.out.println("Teperatura em Farenheit: " +Fnt);
     return Fnt;
     }
     }
